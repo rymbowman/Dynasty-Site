@@ -5,13 +5,13 @@ import {
   Route,
 } from "react-router-dom";
 import { Suspense } from "react";
+import MainLayout from "./layouts/MainLayout";
+import "../src/styles/App.css";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path="/" element={<App />}>
-      <Route index element={<Home />} />
-      <Route path="about" element={<About />} />
-      <Route path="contact" element={<Contact />} />
+    <Route path="/" element={<MainLayout />}>
+      <Route index element={<div></div>} />
     </Route>
   )
 );
