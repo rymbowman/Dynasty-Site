@@ -12,6 +12,7 @@ const StyledAppBar = styled(AppBar)(({ theme }) => ({
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
   backgroundColor: theme.palette.secondary.main,
   color: theme.palette.text.primary,
+  gap: "30px",
 }));
 
 const Navbar = () => {
